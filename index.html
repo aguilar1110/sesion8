@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario Completo</title>
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+</head>
+<body>
+	<form> 
+		<fieldset>
+			<h1>Información personal</h1>
+			<label for="nombre">Nombre completo:</label>
+			<input type="text" id="nombre" name="nombre" required>
+         
+			<label for="apeliido">Apellido completo:</label>
+			<input type="text" id="apeliido" name="apeliido" required>
+
+			<label for="email">Correo electrónico:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="email">Fecha de nacimiento:</label>
+			<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+		</fieldset>
+           <br>
+		<fieldset>
+			
+			<label for="usuario">Nombre de usuario:</label>
+			<input type="text" id="usuario" name="usuario" required>
+		
+			<label for="password">Contraseña:</label>
+			<input type="text" id="password" name="password" required>
+
+		</fieldset>
+            <br>
+	    <fieldset>
+			<legend>Preferencias</legend>
+			<label>Género</label>
+			<br>
+			<label for="maculino">Masculino</label>
+			<input type="radio" id="maculino" name="maculino" value="masculino">
+			<label for="femenino">Femenino</label>
+			<input type="radio" id="femenino" name="femenino" value="femenino">
+
+		</fieldset>
+            <br>
+	    <fieldset>
+			<label for="pais">País:</label>
+			<select id="pais" name="pais">
+				<option value="colombia">Colombia</option>
+				<option value="mexico">Mexico</option>
+				<option value="ecuador">Ecuador</option>
+				<option value="argentina">Argentina</option>
+				<option value="chile">Chile</option>
+            </select>
+		</fieldset>
+            <br>
+		<fieldset>
+			<label for="comentarios">Deja tuscomentarios:</label>
+			<textarea id="comentarios" name="comentarios" rows="4"></textarea>	
+		</fieldset>
+
+
+      <button type="submit">Enviar</button>
+
+	</form>
+
+</body>
+</html>
